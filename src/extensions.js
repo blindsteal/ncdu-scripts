@@ -62,6 +62,8 @@ const isDay = day => ({ mtime }) => {
         && day.getDate() === date.getDate()
 }
 
+console.log(`files filtered by month`)
 const filteredList = list.filter(isMonth(new Date(2019, 7, 1)))
 
+printTopByExtension(filteredList)
 printTopByDate(filteredList, 'key')
